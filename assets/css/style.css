@@ -1,0 +1,56 @@
+body {
+    height: 1000px;
+}
+/*Crystal heading*/
+h1 {
+    font-size: 35px;
+    color: white;
+}
+#gameTitle {
+    background-color: orange;
+    width: 375px;
+    height: 60px;
+    margin: 10px;
+}
+
+/*directions*/
+#directions {
+    color: green;
+
+}
+#main-container {
+    background-color: #ffe3c6;
+    width: 375px;
+    margin: 0px 0px 0px 10px;
+
+}
+
+/*number to guess*/
+#numberGuessSection {
+    background-color: #3cb373;
+}
+h2 {
+    color: black;
+
+/*wins loss*/
+}
+#winLossSection { 
+    background-color: #04fdfe;
+}
+
+/*crystal images*/
+.crystal-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  /*Your total score*/
+#totalScoreSection {
+    background-color: #028a8c;
+    margin: 0px 0px 5px 0px;
+}
+
+#totalScoreActual {
+    background-color: #028a8c;
+    margin: 0px 0px 5px 0px;
+}
