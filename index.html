@@ -1,86 +1,103 @@
 <!DOCTYPE html>
-<html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>Crystals Collector</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+        <title>Crystals Collector</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      
 </head>
 
 <body>
+       
+    
+        <header id="banner"> 
+                <section class="container" id="gameTitle">
+                    <div class="row-sm-3">
+                    <h1>Crystals Collector!</h1>
+                    </div>
+                </section>
+        </header>
 
-    <header id="banner"> 
-        <section class="container" id="gameTitle">
-            <div class="row-sm-3">
-            <h1>Crystals Collector!</h1>
-            </div>
+
+
+        <section id="main-container" class="container">
+                <div class="row-lg-6" id="directionsRow">
+                    <div class="col">
+                    <p id="directions">You will be given a random number at the start of the game.</p>
+                    <br>
+                    <p id="directions">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                    <br>
+                    <p id="directions">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                    <br>
+                    <p id="directions">The value of each crystal is hidden from you until you click on it.</p>
+                    <br>
+                    <p id="directions">Each time when the game starts, the game will change the values of each crystal.</p>
+                    </div>
+                </div>
         </section>
-    </header>
 
-    <section id="main-container" class="container">
-        <div class="row-lg-3">
-            <div class="col">
-            <p id="directions">You will be given a random number at the start of the game.</p>
-            <br>
-            <p id="directions">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-            <br>
-            <p id="directions">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-            <br>
-            <p id="directions">The value of each crystal is hidden from you until you click on it.</p>
-            <br>
-            <p id="directions">Each time when the game starts, the game will change the values of each crystal.</p>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="assets/images/ruby.jpg" id="one">
+                </div>
+                <div class="col-lg-3">
+                    <img src="assets/images/sapphire.jpg" id="two">
+                </div>
+                <div class="col-lg-3">
+                        <img src="assets/images/topaz.jpg" id="three">
+                </div>
+                <div class="col-lg-3">
+                        <img src="assets/images/emerald.jpg" id="four">
+                </div>
             </div>
         </div>
-    </section>
-
-    <section class="container">
-        <div class="row">
-            <section class="col-lg-3" id="numberGuessSection">
-                    <h2>N <span id="number-to-guess"></span></h2>
-            </section>
-            <section class="col-lg-3" id="winLossSection">
-                <p>Wins: <span id="numberWins"></span></p>
-                <p>Losses: <span id="numberLosses"></span></p>
-            </section>
-        </div>
-    </section>
-
-    <section class="container">
-        <div class="row">
-            <section id="crystals">
-
-            </section>
-        </div>
-    </section>
-
-    <section class="container" id="totalScoreSection">
-        <div class="row">
-            <section class="col">
-                <p>Your total score is: </p>
-            </section>
-        </div>
-    </section>
-
-    <section class="container" id="totalScoreActual">
-        <div class="row">
-            <section class="col">
-                <h3><span id="totalScore"></span></h3>
-            </section>
-        </div>
-    </section>
 
 
 
 
+        <section class="container">
+                <div class="row">
+                    <section class="col-lg-3" id="numberGuessSection">
+                            <h2><span id="number-to-guess"></span></h2> <!--random number-to-guess written-->
+                    </section>
+                    <section class="col-lg-3" id="winLossSection">
+                        <p>Wins: <span id="numberWins"></span></p>
+                        <p>Losses: <span id="numberLosses"></span></p>
+                    </section>
+                </div>
+        </section>
+
+        <section class="container" id="totalScoreSection">
+                <div class="row">
+                    <section class="col">
+                        <p>Your total score is: </p>
+                    </section>
+                </div>
+        </section>
+        
+        <section class="container" id="totalScoreActual">
+                <div class="row">
+                    <section class="col">
+                        <h3><span id="totalScore"></span></h3>  <!--totalScore written-->
+                    </section>
+                </div>
+        </section>
+
+
+</div> <!--Main Container End-->
 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
 
 </html>
